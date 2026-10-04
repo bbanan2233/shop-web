@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Учебная форма заявки SHIFT PC: выбор товара, контактные данные и встроенная проверка полей.">
+    <title>
+      Заявка — SHIFT PC
+    </title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer>
+    </script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">
+      Перейти к содержимому
+    </a>
+    <div class="notice">
+      <div class="container notice__inner">
+        <span>
+          Учебный магазин · вымышленные товары и цены
+        </span>
+        <span>
+          Собери свой следующий шаг
+        </span>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="logo" href="index.html" aria-label="SHIFT PC — главная">
+          <span class="logo__mark" aria-hidden="true">
+            ↗
+          </span>
+          SHIFT
+          <span class="logo__suffix">
+            PC
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li>
+              <a class="site-nav__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li>
+              <a class="site-nav__link" href="catalog.html">
+                Каталог
+              </a>
+            </li>
+            <li>
+              <a class="site-nav__link" href="compare.html">
+                Сравнение
+              </a>
+            </li>
+            <li>
+              <a class="site-nav__link" href="delivery.html">
+                Доставка
+              </a>
+            </li>
+            <li>
+              <a class="site-nav__link" href="contacts.html">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="button button--small" href="order.html" aria-current="page">
+          Оставить заявку
+          <span aria-hidden="true">
+            ↗
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main">
+      <div class="container page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="index.html">
+            Главная
+          </a>
+          <span aria-hidden="true">
+            /
+          </span>
+          <span aria-current="page">
+            Заявка
+          </span>
+        </nav>
+        <div class="page-heading">
+          <p class="eyebrow">
+            Твой следующий шаг
+          </p>
+          <h1>
+            Оставить заявку
+          </h1>
+          <p>
+            Выбери деталь и удобный способ связи.
+          </p>
+        </div>
+        <div class="order-layout">
+          <section class="form-panel" aria-labelledby="form-title">
+            <h2 id="form-title">
+              Контактные данные
+            </h2>
+            <p id="demo-note" class="callout">
+              Учебная форма. Используйте вымышленные данные. После проверки откроется страница результата; реальный заказ не создаётся.
+            </p>
+            <p class="muted">
+              Поля со звёздочкой обязательны.
+            </p>
+            <form class="order-form" action="thanks.html" method="get" aria-describedby="demo-note">
+              <div class="form-grid">
+                <div class="order-form__field">
+                  <label for="name">
+                    Имя *
+                  </label>
+                  <input id="name" name="name" type="text" minlength="2" maxlength="50" placeholder="Алексей" required autocomplete="off">
+                </div>
+                <div class="order-form__field">
+                  <label for="email">
+                    E-mail *
+                  </label>
+                  <input id="email" name="email" type="email" placeholder="student@example.com" required autocomplete="off">
+                </div>
+                <div class="order-form__field">
+                  <label for="phone">
+                    Телефон *
+                  </label>
+                  <input id="phone" name="phone" type="tel" placeholder="+79000000000" pattern="\+7[0-9]{10}" title="+7 и 10 цифр без пробелов, например +79000000000" required aria-describedby="phone-hint" autocomplete="off">
+                  <small id="phone-hint">
+                    +7 и 10 цифр без пробелов.
+                  </small>
+                </div>
+                <div class="order-form__field">
+                  <label for="product">
+                    Товар *
+                  </label>
+                  <select id="product" name="product" required>
+                    <option value="">
+                      Выберите товар
+                    </option>
+                    <option value="cpu">
+                      Core 8 — 24 900 ₽
+                    </option>
+                    <option value="gpu">
+                      Vector 16 — 59 900 ₽
+                    </option>
+                    <option value="board">
+                      Base S5 — 14 900 ₽
+                    </option>
+                    <option value="ram">
+                      Pulse 32 — 9 900 ₽
+                    </option>
+                    <option value="ssd">
+                      Flash 1TB — 7 900 ₽
+                    </option>
+                    <option value="cooler">
+                      Air Tower — 4 900 ₽
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <fieldset class="contact-method">
+                <legend>
+                  Предпочтительный способ связи
+                </legend>
+                <label class="checkbox" for="by-email">
+                  <input id="by-email" name="contact" type="radio" value="email" checked>
+                  По e-mail
+                </label>
+                <label class="checkbox" for="by-phone">
+                  <input id="by-phone" name="contact" type="radio" value="phone">
+                  По телефону
+                </label>
+              </fieldset>
+              <div class="order-form__field">
+                <label for="comment">
+                  Комментарий
+                </label>
+                <textarea id="comment" name="comment" rows="4" maxlength="500" placeholder="Например, нужна помощь с подбором деталей" aria-describedby="comment-hint">
+                </textarea>
+                <small id="comment-hint">
+                  До 500 символов.
+                </small>
+              </div>
+              <label class="checkbox checkbox--agreement" for="agreement">
+                <input id="agreement" name="agreement" type="checkbox" value="yes" required>
+                <span>
+                  Согласен на обработку введённых данных в рамках учебной демонстрации *
+                </span>
+              </label>
+              <div class="form-actions">
+                <button class="button" type="submit">
+                  Проверить и продолжить ↗
+                </button>
+                <button class="button button--outline" type="reset">
+                  Очистить
+                </button>
+              </div>
+            </form>
+          </section>
+          <aside class="help-card">
+            <p class="eyebrow">
+              Понятный процесс
+            </p>
+            <h2>
+              Три простых шага
+            </h2>
+            <ol class="steps">
+              <li>
+                Выберите товар из каталога.
+              </li>
+              <li>
+                Заполните поля учебной формы.
+              </li>
+              <li>
+                Посмотрите демонстрационный результат.
+              </li>
+            </ol>
+            <hr>
+            <p>
+              Остались вопросы?
+            </p>
+            <a class="text-link" href="contacts.html">
+              Перейти к контактам ↗
+            </a>
+            <button class="text-button" data-open-dialog type="button">
+              Подробнее о демонстрации
+            </button>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__top">
+          <div>
+            <a class="logo logo--light" href="index.html">
+              SHIFT
+              <span class="logo__suffix">
+                PC
+              </span>
+            </a>
+            <p>
+              Хорошая сборка начинается с деталей.
+            </p>
+          </div>
+          <nav aria-label="Навигация в подвале">
+            <a href="catalog.html">
+              Каталог
+            </a>
+            <a href="order.html">
+              Заявка
+            </a>
+            <a href="index.html#faq">
+              Вопросы и ответы
+            </a>
+            <a href="contacts.html">
+              Контакты
+            </a>
+          </nav>
+        </div>
+        <div class="site-footer__bottom">
+          <span>
+            © 2026 SHIFT PC · Учебный проект
+          </span>
+          <span>
+            Александров Дмитрий · ЭФБО-16-25
+          </span>
+        </div>
+      </div>
+    </footer>
+    <a class="back-top" href="#top" aria-label="Наверх">
+      ↑
+    </a>
+    <dialog class="info-dialog" id="info-dialog" aria-labelledby="dialog-title">
+      <div class="info-dialog__head">
+        <p class="eyebrow">
+          Перед оформлением
+        </p>
+        <button class="icon-button" type="button" data-close-dialog aria-label="Закрыть окно">
+          ×
+        </button>
+      </div>
+      <h2 id="dialog-title">
+        Как работает заявка
+      </h2>
+      <p>
+        Выберите товар и заполните форму. В этом учебном проекте браузер проверяет поля и открывает страницу демонстрационного результата.
+      </p>
+      <p>
+        <strong>
+          Заказ не создаётся, данные не отправляются менеджеру.
+        </strong>
+        Используйте только вымышленные данные.
+      </p>
+      <a class="button" href="order.html">
+        Перейти к форме
+      </a>
+    </dialog>
+  </body>
+</html>

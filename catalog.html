@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Каталог шести учебных моделей комплектующих SHIFT PC с категориями, ценами и характеристиками.">
+    <title>
+      Каталог — SHIFT PC
+    </title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer>
+    </script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">
+      Перейти к содержимому
+    </a>
+    <div class="notice">
+      <div class="container notice__inner">
+        <span>
+          Учебный магазин · вымышленные товары и цены
+        </span>
+        <span>
+          Собери свой следующий шаг
+        </span>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="logo" href="index.html" aria-label="SHIFT PC — главная">
+          <span class="logo__mark" aria-hidden="true">
+            ↗
+          </span>
+          SHIFT
+          <span class="logo__suffix">
+            PC
+          </span>
+        </a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li>
+              <a class="site-nav__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li>
+              <a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">
+                Каталог
+              </a>
+            </li>
+            <li>
+              <a class="site-nav__link" href="compare.html">
+                Сравнение
+              </a>
+            </li>
+            <li>
+              <a class="site-nav__link" href="delivery.html">
+                Доставка
+              </a>
+            </li>
+            <li>
+              <a class="site-nav__link" href="contacts.html">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="button button--small" href="order.html">
+          Оставить заявку
+          <span aria-hidden="true">
+            ↗
+          </span>
+        </a>
+      </div>
+    </header>
+    <main id="main">
+      <div class="container page">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <a href="index.html">
+            Главная
+          </a>
+          <span aria-hidden="true">
+            /
+          </span>
+          <span aria-current="page">
+            Каталог
+          </span>
+        </nav>
+        <div class="page-heading">
+          <p class="eyebrow">
+            Найди свою деталь
+          </p>
+          <h1>
+            Каталог комплектующих
+          </h1>
+          <p>
+            Шесть деталей. Много возможностей для следующей сборки.
+          </p>
+        </div>
+        <div class="catalog-layout">
+          <aside class="catalog-sidebar">
+            <h2>
+              Категории
+            </h2>
+            <nav aria-label="Категории каталога">
+              <a href="#cpu">
+                Процессоры
+              </a>
+              <a href="#gpu">
+                Видеокарты
+              </a>
+              <a href="#board">
+                Материнские платы
+              </a>
+              <a href="#ram">
+                Оперативная память
+              </a>
+              <a href="#ssd">
+                Накопители
+              </a>
+              <a href="#cooler">
+                Охлаждение
+              </a>
+            </nav>
+            <fieldset class="filter">
+              <legend>
+                Фильтры
+              </legend>
+              <p id="filter-help" class="muted">
+                Статический макет. Фильтрация появится в следующей работе.
+              </p>
+              <label for="price-filter">
+                Цена до, ₽
+              </label>
+              <input id="price-filter" type="number" value="60000" disabled aria-describedby="filter-help">
+              <label class="checkbox" for="stock-filter">
+                <input id="stock-filter" type="checkbox" checked disabled>
+                Только в наличии
+              </label>
+              <button class="button button--disabled" type="button" disabled>
+                Применить
+              </button>
+            </fieldset>
+          </aside>
+          <section aria-labelledby="catalog-title">
+            <div class="catalog-toolbar">
+              <h2 id="catalog-title">
+                Все товары
+                <span class="count">
+                  06
+                </span>
+              </h2>
+              <a href="compare.html" class="text-link">
+                Сравнить наборы ↗
+              </a>
+            </div>
+            <div class="product-grid product-grid--catalog">
+              <div class="category-anchor" id="cpu">
+                <article class="product-card">
+                  <a class="product-card__visual" href="product.html" tabindex="-1" aria-hidden="true">
+                    <span class="product-card__badge">
+                      Хит
+                    </span>
+                    <img src="images/cpu.svg" alt="" width="380" height="320" loading="lazy">
+                  </a>
+                  <div class="product-card__body">
+                    <p class="eyebrow">
+                      Процессоры
+                    </p>
+                    <h3 class="product-card__title">
+                      <a href="product.html">
+                        Core 8
+                      </a>
+                    </h3>
+                    <p class="product-card__spec">
+                      8 ядер / 16 потоков
+                    </p>
+                    <p>
+                      Восемь ядер для игр, учёбы и повседневной работы.
+                    </p>
+                    <div class="product-card__bottom">
+                      <strong>
+                        24 900 ₽
+                      </strong>
+                      <a class="product-card__link" href="product.html" aria-label="Подробнее о Core 8">
+                        Подробнее
+                        <span aria-hidden="true">
+                          ↗
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="category-anchor" id="gpu">
+                <article class="product-card">
+                  <a class="product-card__visual" href="product-gpu.html" tabindex="-1" aria-hidden="true">
+                    <span class="product-card__badge">
+                      Новинка
+                    </span>
+                    <img src="images/gpu.svg" alt="" width="380" height="320" loading="lazy">
+                  </a>
+                  <div class="product-card__body">
+                    <p class="eyebrow">
+                      Видеокарты
+                    </p>
+                    <h3 class="product-card__title">
+                      <a href="product-gpu.html">
+                        Vector 16
+                      </a>
+                    </h3>
+                    <p class="product-card__spec">
+                      16 ГБ / 3 вентилятора
+                    </p>
+                    <p>
+                      Графическая карта для детализированных виртуальных миров.
+                    </p>
+                    <div class="product-card__bottom">
+                      <strong>
+                        59 900 ₽
+                      </strong>
+                      <a class="product-card__link" href="product-gpu.html" aria-label="Подробнее о Vector 16">
+                        Подробнее
+                        <span aria-hidden="true">
+                          ↗
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="category-anchor" id="board">
+                <article class="product-card">
+                  <a class="product-card__visual" href="product-board.html" tabindex="-1" aria-hidden="true">
+                    <span class="product-card__badge">
+                      Основа сборки
+                    </span>
+                    <img src="images/board.svg" alt="" width="380" height="320" loading="lazy">
+                  </a>
+                  <div class="product-card__body">
+                    <p class="eyebrow">
+                      Материнские платы
+                    </p>
+                    <h3 class="product-card__title">
+                      <a href="product-board.html">
+                        Base S5
+                      </a>
+                    </h3>
+                    <p class="product-card__spec">
+                      S5 / DDR5 / ATX
+                    </p>
+                    <p>
+                      Платформа с запасом для будущего обновления компьютера.
+                    </p>
+                    <div class="product-card__bottom">
+                      <strong>
+                        14 900 ₽
+                      </strong>
+                      <a class="product-card__link" href="product-board.html" aria-label="Подробнее о Base S5">
+                        Подробнее
+                        <span aria-hidden="true">
+                          ↗
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="category-anchor" id="ram">
+                <article class="product-card">
+                  <a class="product-card__visual" href="product-ram.html" tabindex="-1" aria-hidden="true">
+                    <span class="product-card__badge">
+                      Комплект
+                    </span>
+                    <img src="images/ram.svg" alt="" width="380" height="320" loading="lazy">
+                  </a>
+                  <div class="product-card__body">
+                    <p class="eyebrow">
+                      Оперативная память
+                    </p>
+                    <h3 class="product-card__title">
+                      <a href="product-ram.html">
+                        Pulse 32
+                      </a>
+                    </h3>
+                    <p class="product-card__spec">
+                      32 ГБ / DDR5 / 2 × 16
+                    </p>
+                    <p>
+                      Два модуля памяти для комфортной многозадачности.
+                    </p>
+                    <div class="product-card__bottom">
+                      <strong>
+                        9 900 ₽
+                      </strong>
+                      <a class="product-card__link" href="product-ram.html" aria-label="Подробнее о Pulse 32">
+                        Подробнее
+                        <span aria-hidden="true">
+                          ↗
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="category-anchor" id="ssd">
+                <article class="product-card">
+                  <a class="product-card__visual" href="product-ssd.html" tabindex="-1" aria-hidden="true">
+                    <span class="product-card__badge">
+                      Быстрый старт
+                    </span>
+                    <img src="images/ssd.svg" alt="" width="380" height="320" loading="lazy">
+                  </a>
+                  <div class="product-card__body">
+                    <p class="eyebrow">
+                      Накопители
+                    </p>
+                    <h3 class="product-card__title">
+                      <a href="product-ssd.html">
+                        Flash 1TB
+                      </a>
+                    </h3>
+                    <p class="product-card__spec">
+                      1 ТБ / NVMe / M.2
+                    </p>
+                    <p>
+                      Место для системы, проектов и любимых игр.
+                    </p>
+                    <div class="product-card__bottom">
+                      <strong>
+                        7 900 ₽
+                      </strong>
+                      <a class="product-card__link" href="product-ssd.html" aria-label="Подробнее о Flash 1TB">
+                        Подробнее
+                        <span aria-hidden="true">
+                          ↗
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="category-anchor" id="cooler">
+                <article class="product-card">
+                  <a class="product-card__visual" href="product-cooler.html" tabindex="-1" aria-hidden="true">
+                    <span class="product-card__badge">
+                      Тихая работа
+                    </span>
+                    <img src="images/cooler.svg" alt="" width="380" height="320" loading="lazy">
+                  </a>
+                  <div class="product-card__body">
+                    <p class="eyebrow">
+                      Охлаждение
+                    </p>
+                    <h3 class="product-card__title">
+                      <a href="product-cooler.html">
+                        Air Tower
+                      </a>
+                    </h3>
+                    <p class="product-card__spec">
+                      120 мм / 4 теплотрубки
+                    </p>
+                    <p>
+                      Башенное охлаждение для стабильной работы системы.
+                    </p>
+                    <div class="product-card__bottom">
+                      <strong>
+                        4 900 ₽
+                      </strong>
+                      <a class="product-card__link" href="product-cooler.html" aria-label="Подробнее о Air Tower">
+                        Подробнее
+                        <span aria-hidden="true">
+                          ↗
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__top">
+          <div>
+            <a class="logo logo--light" href="index.html">
+              SHIFT
+              <span class="logo__suffix">
+                PC
+              </span>
+            </a>
+            <p>
+              Хорошая сборка начинается с деталей.
+            </p>
+          </div>
+          <nav aria-label="Навигация в подвале">
+            <a href="catalog.html">
+              Каталог
+            </a>
+            <a href="order.html">
+              Заявка
+            </a>
+            <a href="index.html#faq">
+              Вопросы и ответы
+            </a>
+            <a href="contacts.html">
+              Контакты
+            </a>
+          </nav>
+        </div>
+        <div class="site-footer__bottom">
+          <span>
+            © 2026 SHIFT PC · Учебный проект
+          </span>
+          <span>
+            Александров Дмитрий · ЭФБО-16-25
+          </span>
+        </div>
+      </div>
+    </footer>
+    <a class="back-top" href="#top" aria-label="Наверх">
+      ↑
+    </a>
+    <dialog class="info-dialog" id="info-dialog" aria-labelledby="dialog-title">
+      <div class="info-dialog__head">
+        <p class="eyebrow">
+          Перед оформлением
+        </p>
+        <button class="icon-button" type="button" data-close-dialog aria-label="Закрыть окно">
+          ×
+        </button>
+      </div>
+      <h2 id="dialog-title">
+        Как работает заявка
+      </h2>
+      <p>
+        Выберите товар и заполните форму. В этом учебном проекте браузер проверяет поля и открывает страницу демонстрационного результата.
+      </p>
+      <p>
+        <strong>
+          Заказ не создаётся, данные не отправляются менеджеру.
+        </strong>
+        Используйте только вымышленные данные.
+      </p>
+      <a class="button" href="order.html">
+        Перейти к форме
+      </a>
+    </dialog>
+  </body>
+</html>
